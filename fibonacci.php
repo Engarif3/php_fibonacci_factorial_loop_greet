@@ -17,3 +17,19 @@ function fibonacci($n) {
 
 fibonacci(10);
 ?>
+
+
+<!-- another solution; -->
+
+<?php
+$a = 0;
+$b = 1;
+echo "$a,$b,";
+for ($n=0; $n<=7; $n++){
+    $temp = $a+$b;
+    echo "$temp,";
+    $a = $b;
+    $b = $temp;
+}
+
+?>
